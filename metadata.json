@@ -1,0 +1,6 @@
+{
+  "name": "Daarul Huda Islamic Boarding School",
+  "description": "Website Resmi Daarul Huda Islamic Boarding School (Penerimaan Santriwati Baru T.A. 2027/2028 & Galeri Kegiatan Santriwati Berbasis Adab dan Akhlaq)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
