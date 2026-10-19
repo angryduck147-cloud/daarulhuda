@@ -62,3 +62,18 @@ Setelah situs ter-deploy di Cloudflare Pages:
 3. Klik **Set up a custom domain**.
 4. Masukkan nama domain Anda (misal: `daarulhuda.sch.id` atau `psb.daarulhuda.ponpes.id`).
 5. Cloudflare akan otomatis menerbitkan sertifikat SSL/TLS gratis (HTTPS) dan mengaktifkan proteksi DDoS global.
+
+---
+
+## Solusi Error Build Cloudflare (ERESOLVE Peer Dependency):
+Jika sebelumnya Anda mengalami error:
+`npm error ERESOLVE could not resolve ... Conflicting peer dependency: esbuild`
+
+Hal ini sudah diperbaiki secara permanen melalui:
+1. Penghapusan versi esbuild lama yang berbenturan dengan Vite 8.
+2. Penambahan file `.npmrc` dengan `legacy-peer-deps=true`.
+
+*Jika di Cloudflare Pages Dashboard Anda menggunakan Custom Environment Variables, Anda juga dapat menambahkan:*
+- Key: `NPM_FLAGS`
+- Value: `--legacy-peer-deps`
+
